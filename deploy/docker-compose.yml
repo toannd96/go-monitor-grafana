@@ -1,0 +1,42 @@
+version: "3"
+services:
+  loki:
+    image: grafana/loki:1.4.1
+    container_name: gl_loki
+    expose:
+      - 3100
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki-config.yml:/etc/loki/loki-config.yml
+    command: -config.file=/etc/loki/loki-config.yml
+    networks:
+      - gl
+
+  promtail:
+    image: grafana/promtail:1.4.1
+    container_name: gl_promtail
+    expose:
+      - 9080
+    ports:
+      - "9080:9080"
+    volumes:
+      # - /var/run/docker.sock:/var/run/docker.sock
+      # - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - ../test-log.log:/var/log/test-log.log:ro
+      - ./docker-config.yml:/etc/promtail/docker-config.yml
+    command: -config.file=/etc/promtail/docker-config.yml
+    networks:
+      - gl
+
+  grafana:
+    image: grafana/grafana:master
+    container_name: gl_grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - gl
+
+networks:
+  gl:
+

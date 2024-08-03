@@ -1,0 +1,6 @@
+2024-08-04 02:01:07	[INFO]	cmd/main.go:24	logger created
+2024-08-04 02:01:08	[INFO]	cmd/main.go:27	rest controller created
+2024-08-04 02:01:09	[INFO]	cmd/main.go:30	rest controller accepts a connections on the port :8080
+2024-08-04 02:01:59	[INFO]	cmd/main.go:24	logger created
+2024-08-04 02:02:00	[INFO]	cmd/main.go:27	rest controller created
+2024-08-04 02:02:01	[INFO]	cmd/main.go:30	rest controller accepts a connections on the port :8080
