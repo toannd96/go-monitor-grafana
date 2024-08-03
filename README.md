@@ -1,4 +1,8 @@
-# loki-grafana
+# Monitor API golang with grafana
+
+![](https://github.com/toannd96/go-monitor-grafana/blob/master/grafana.png)
+
+![](https://github.com/toannd96/go-monitor-grafana/blob/master/promtail.png)
 
 An example of using Loki with Grafana for an Golang app monitoring.
 
