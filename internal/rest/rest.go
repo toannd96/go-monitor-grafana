@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	ginprometheus "github.com/zsais/go-gin-prometheus"
 	"go.uber.org/zap"
 )
 
@@ -68,9 +69,15 @@ func (r *rest) jsonLogMiddleware() gin.HandlerFunc {
 
 func (r *rest) Listen() {
 	router := gin.Default()
+
+	// Prometheus middleware
+	p := ginprometheus.NewPrometheus("gin")
+	p.Use(router)
+
 	router.Use(r.jsonLogMiddleware())
 	router.GET("/version", r.handleVersion)
 	router.GET("/hello", r.handleHello)
+
 	if err := router.Run(); err != nil {
 		r.log.Fatal("error during rest controller execution", zap.Error(err))
 	}

@@ -7,3 +7,29 @@
 2024-08-04 12:59:16	[INFO]	cmd/main.go:24	logger created
 2024-08-04 12:59:17	[INFO]	cmd/main.go:27	rest controller created
 2024-08-04 12:59:18	[INFO]	cmd/main.go:30	rest controller accepts a connections on the port :8080
+2024-08-04 14:45:55	[INFO]	cmd/main.go:27	Logger initialized
+2024-08-04 14:45:56	[INFO]	cmd/main.go:31	REST controller initialized
+2024-08-04 14:45:57	[INFO]	cmd/main.go:35	REST server started and accepting connections on port :8080
+2024-08-04 14:47:14	[INFO]	rest/rest.go:58	request handled	{"client_ip": "[::1]:34130", "duration": 0.01, "method": "GET", "path": "/hello", "status": 200, "referrer": ""}
+2024-08-04 14:47:15	[INFO]	rest/rest.go:58	request handled	{"client_ip": "[::1]:34130", "duration": 0, "method": "GET", "path": "/favicon.ico", "status": 404, "referrer": "http://localhost:8080/hello"}
+2024-08-04 14:55:20	[INFO]	cmd/main.go:44	Received signal interrupt, exiting...
+2024-08-04 15:00:47	[INFO]	cmd/main.go:27	Logger initialized
+2024-08-04 15:00:48	[INFO]	cmd/main.go:31	REST controller initialized
+2024-08-04 15:00:49	[INFO]	cmd/main.go:35	REST server started and accepting connections on port :8080
+2024-08-04 15:01:58	[INFO]	rest/rest.go:58	request handled	{"client_ip": "[::1]:48582", "duration": 0, "method": "GET", "path": "/hello", "status": 200, "referrer": ""}
+2024-08-04 15:02:00	[INFO]	rest/rest.go:58	request handled	{"client_ip": "[::1]:48582", "duration": 0, "method": "GET", "path": "/hello", "status": 200, "referrer": ""}
+2024-08-04 15:03:50	[INFO]	rest/rest.go:58	request handled	{"client_ip": "[::1]:48582", "duration": 0.01, "method": "GET", "path": "/hello", "status": 200, "referrer": ""}
+2024-08-04 15:04:49	[INFO]	rest/rest.go:58	request handled	{"client_ip": "[::1]:48582", "duration": 0.03, "method": "GET", "path": "/version", "status": 200, "referrer": ""}
+2024-08-04 15:09:28	[INFO]	cmd/main.go:44	Received signal interrupt, exiting...
+2024-08-04 15:11:48	[INFO]	cmd/main.go:27	Logger initialized
+2024-08-04 15:11:49	[INFO]	cmd/main.go:31	REST controller initialized
+2024-08-04 15:11:50	[INFO]	cmd/main.go:35	REST server started and accepting connections on port :8080
+2024-08-04 15:23:19	[INFO]	cmd/main.go:44	Received signal interrupt, exiting...
+2024-08-04 16:57:57	[INFO]	cmd/main.go:27	Logger initialized
+2024-08-04 16:57:58	[INFO]	cmd/main.go:31	REST controller initialized
+2024-08-04 16:57:59	[INFO]	cmd/main.go:35	REST server started and accepting connections on port :8080
+2024-08-04 17:01:51	[INFO]	cmd/main.go:44	Received signal interrupt, exiting...
+2024-08-04 17:12:07	[INFO]	cmd/main.go:27	Logger initialized
+2024-08-04 17:12:08	[INFO]	cmd/main.go:31	REST controller initialized
+2024-08-04 17:12:09	[INFO]	cmd/main.go:35	REST server started and accepting connections on port :8080
+2024-08-04 17:12:16	[INFO]	cmd/main.go:44	Received signal interrupt, exiting...

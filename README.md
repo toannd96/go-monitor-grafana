@@ -10,6 +10,8 @@ An example of using Loki with Grafana for Golang app monitoring.
 ```bash
 make run-docker
 
+make down-docker
+
 make run-app
 ```
 
